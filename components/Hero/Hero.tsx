@@ -48,7 +48,7 @@ const Hero = (): JSX.Element => {
                 Date: <span className='font-bold'>Nov 20th - 13:00 UTC</span>
               </p>
               <p>
-                Price: <span className='font-bold'>0.5 SOL</span>
+                Price: <span className='font-bold'>1 SOL</span>
               </p>
             </div>
             {/* <Minter
