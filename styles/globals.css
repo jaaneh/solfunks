@@ -14,7 +14,7 @@
   html {
     position: relative;
     scroll-behavior: smooth;
-    background: url(/images/funk_pattern.png);
+    background: url('/funk_pattern.png');
     background-size: 20px 20px;
   }
 
