@@ -1,0 +1,64 @@
+.wallet-adapter-modal-container .wallet-adapter-modal-wrapper,
+.wallet-adapter-dropdown .wallet-adapter-dropdown-list {
+  background-image: linear-gradient(to right bottom, #ff9b71, #e84855);
+}
+.wallet-adapter-modal-container .wallet-adapter-button,
+.wallet-adapter-dropdown .wallet-adapter-dropdown-list-item {
+  background-color: #ff9b71;
+  text-shadow: 1px 1px 0 #3b4156, 2px 1px 0 #6cacbe;
+}
+
+.sf-btn {
+  background-color: #2d3047;
+}
+.sf-btn:not([disabled]):hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
+}
+
+.text-shadow-primary {
+  text-shadow: 2px 2px 0 #3b4156, 4px 3px 0 #6cacbe;
+}
+
+.text-shadow-primary-sm {
+  text-shadow: 1px 1px 0 #3b4156, 3px 2px 0 #6cacbe;
+}
+
+.text-shadow-primary-xs {
+  text-shadow: 1px 1px 0 #3b4156, 2px 1px 0 #6cacbe;
+}
+
+.box-shadow-primary {
+  @apply relative;
+}
+
+.box-shadow-primary::before {
+  background: #2d3047;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 6px;
+  left: 10px;
+  z-index: 0;
+  transition: all 0.2s cubic-bezier(0.16, 0.87, 0.5, 1);
+  will-change: top, left, width, height;
+}
+
+.box-shadow-primary:hover::before {
+  top: 7px;
+  left: 11px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+}
+
+.button-shadow-primary {
+  text-shadow: 1.5px 1.5px #fff, 3px 3px #fffd82;
+  position: relative;
+}
+
+.button-shadow-primary:hover {
+  color: #fff;
+  text-shadow: 2px 2px #3b4156, 4px 4px #6cacbe;
+  background-image: linear-gradient(180deg, #6cacbe, #fffd82);
+}

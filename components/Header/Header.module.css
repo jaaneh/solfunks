@@ -1,0 +1,63 @@
+.mobile_menu_btn,
+.connect_btn {
+  will-change: padding, background, text-shadow;
+  text-shadow: 3px 3px 0 #3b4156, 5px 4px 0 #6cacbe;
+  transition: all 0.35s cubic-bezier(0.16, 0.87, 0.5, 1), padding 0.15s ease-out;
+  background-image: linear-gradient(180deg, #6cacbe, #ffb078);
+  @apply relative border-4 flex border-solid border-[#3c404f] text-base lg:text-xl xl:text-2xl no-underline rounded-none uppercase text-center cursor-pointer text-white py-3 px-6 leading-none font-bold;
+}
+
+.mobile_menu_btn {
+  @apply py-[0.55rem] px-4;
+}
+
+.connect_btn:hover {
+  background: #ffb078;
+  background-image: linear-gradient(180deg, #ffb078, #ffb078);
+  padding: 7px 29px 17px 19px;
+  animation: shadowrepeat 0.75s infinite;
+  animation-direction: forward;
+  animation-timing-function: cubic-bezier(0.16, 0.87, 0.5, 1);
+}
+
+@keyframes shadowrepeat {
+  0% {
+    text-shadow: 2px 2px 0 #6cacbe, 4px 4px 0 #464e63, 6px 6px 0 #576277,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #8293a9, 12px 12px 0 #8ea0b6;
+  }
+
+  12.5% {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #6cacbe, 6px 6px 0 #576277,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #8293a9, 12px 12px 0 #8ea0b6;
+  }
+
+  25% {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #464e63, 6px 6px 0 #6cacbe,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #8293a9, 12px 12px 0 #8ea0b6;
+  }
+
+  37.5% {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #464e63, 6px 6px 0 #576277,
+      8px 8px 0 #6cacbe, 10px 10px 0 #8293a9, 12px 12px 0 #8ea0b6;
+  }
+
+  50% {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #464e63, 6px 6px 0 #576277,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #6cacbe, 12px 12px 0 #8ea0b6;
+  }
+
+  62.5% {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #464e63, 6px 6px 0 #576277,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #8293a9, 12px 12px 0 #6cacbe;
+  }
+
+  75% {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #464e63, 6px 6px 0 #576277,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #8293a9, 12px 12px 0 #8ea0b6;
+  }
+
+  to {
+    text-shadow: 2px 2px 0 #3b4156, 4px 4px 0 #464e63, 6px 6px 0 #576277,
+      8px 8px 0 #6d7a8f, 10px 10px 0 #8293a9, 12px 12px 0 #8ea0b6;
+  }
+}

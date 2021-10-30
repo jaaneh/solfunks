@@ -1,0 +1,8 @@
+.btn {
+  transition-duration: inherit;
+  transition-timing-function: inherit;
+  transition-property: inherit;
+  font-size: inherit;
+  height: 3.5rem;
+  min-height: 3.5rem;
+}

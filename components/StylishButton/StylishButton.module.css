@@ -1,0 +1,62 @@
+.button {
+  will-change: padding, background, text-shadow;
+  text-shadow: 3px 3px 0 #3b4156, 5px 4px 0 #6cacbe;
+  transition: all 0.35s cubic-bezier(0.16, 0.87, 0.5, 1), padding 0.15s ease-out;
+  background-image: linear-gradient(180deg, #6cacbe, #ffb078);
+  @apply relative border-4 border-solid border-[#3c404f] text-2xl no-underline uppercase text-center inline-block cursor-pointer text-white py-3 px-6 leading-none font-bold;
+}
+
+.button:hover {
+  background: #ffb078;
+  background-image: linear-gradient(180deg, #ffb078, #ffb078);
+  padding: 7px 29px 17px 19px;
+  animation: shadowrepeat 0.6s infinite;
+  animation-direction: forward;
+  animation-timing-function: cubic-bezier(0.16, 0.87, 0.5, 1);
+}
+
+.button_disabled {
+  @apply text-white bg-red-800 cursor-not-allowed pointer-events-none;
+}
+
+@keyframes shadowrepeat {
+  0% {
+    text-shadow: 3px 3px 0 #6cacbe, 6px 6px 0 #464e63, 9px 9px 0 #576277,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #8293a9, 18px 18px 0 #8ea0b6;
+  }
+
+  12.5% {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #6cacbe, 9px 9px 0 #576277,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #8293a9, 18px 18px 0 #8ea0b6;
+  }
+
+  25% {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #464e63, 9px 9px 0 #6cacbe,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #8293a9, 18px 18px 0 #8ea0b6;
+  }
+
+  37.5% {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #464e63, 9px 9px 0 #576277,
+      12px 12px 0 #6cacbe, 15px 15px 0 #8293a9, 18px 18px 0 #8ea0b6;
+  }
+
+  50% {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #464e63, 9px 9px 0 #576277,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #6cacbe, 18px 18px 0 #8ea0b6;
+  }
+
+  62.5% {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #464e63, 9px 9px 0 #576277,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #8293a9, 18px 18px 0 #6cacbe;
+  }
+
+  75% {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #464e63, 9px 9px 0 #576277,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #8293a9, 18px 18px 0 #8ea0b6;
+  }
+
+  to {
+    text-shadow: 3px 3px 0 #3b4156, 6px 6px 0 #464e63, 9px 9px 0 #576277,
+      12px 12px 0 #6d7a8f, 15px 15px 0 #8293a9, 18px 18px 0 #8ea0b6;
+  }
+}

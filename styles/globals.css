@@ -1,16 +1,104 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+
+@layer base {
+  :root {
+    background-color: rgb(255, 255, 255);
+  }
+
+  html,
+  body,
+  #__next {
+    @apply min-h-screen;
+  }
+
+  html {
+    position: relative;
+    scroll-behavior: smooth;
+    background: url(/images/funk_pattern.png);
+    background-size: 20px 20px;
+  }
+
+  body {
+    font-family: 'IBM Plex Mono', monospace, serif;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255, 155, 113),
+      rgba(255, 255, 255, 0)
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 1200px;
+    @apply tracking-tight;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold uppercase;
+  }
+
+  a {
+    @apply cursor-pointer;
+  }
+
+  a:hover {
+    @apply no-underline;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@tailwind components;
+@tailwind utilities;
+
+.timeline-card-content {
+  padding: 1rem;
 }
 
-* {
-  box-sizing: border-box;
+.bg-orange-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 155, 113),
+    rgba(232, 72, 85, 0.6)
+  );
+}
+
+.swiper {
+  width: 100% !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  user-select: none;
+}
+
+.swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.swiper-slide img {
+  display: block !important;
+  width: 100% !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 155, 113, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
