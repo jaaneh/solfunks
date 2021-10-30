@@ -20,7 +20,7 @@ const HomePage = () => {
         </section>
 
         <section id='about' className='w-full'>
-          <div className='container w-full py-20 pt-0 mx-auto space-y-20 md:pt-20'>
+          <div className='container w-full py-20 pt-0 mx-auto space-y-20 md:pt-12'>
             <About />
           </div>
         </section>

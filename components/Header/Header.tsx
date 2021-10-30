@@ -42,11 +42,7 @@ const Header = (): JSX.Element => {
           <Link href='/'>
             <a tabIndex={0} className='relative px-2 md:px-4'>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src='/header_logo.png'
-                alt=''
-                className='w-full h-full max-w-[18rem]'
-              />
+              <img src='/header_logo.png' alt='' className='w-full h-full max-w-sm' />
             </a>
           </Link>
         </div>
