@@ -51,7 +51,7 @@ const About = (): JSX.Element => {
             Solfunks generated will therefore all be unique 1-of-1s.
           </p>
           <p>
-            We will be releasing 4,444 groovy Solpunks on Nov 20th at 13:00 UTC. We want
+            We will be releasing 4,444 groovy Solfunks on Nov 20th at 13:00 UTC. We want
             to make sure you have an easy time to get what you want. So, unlike the lame
             club you go to, we'll keep giving you what you what you want.
           </p>
